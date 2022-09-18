@@ -1,24 +1,66 @@
+
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import ReactGA from "react-ga";  //Google Analytics
+import React, { useEffect, useRef } from 'react'; //useEffect for Google Analytics
+//import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+//import components
+import NaviBar from './components/NaviBar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Team from './components/Team';
+import ContactUs from './components/ContactUs';
+import OurFooter from './components/OurFooter';
+import { ChakraProvider } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
+
+
+
+
+const App =()=> {
+
+  //for google analytics
+  useEffect(() => {
+    ReactGA.initialize('UA-186381428-2');
+    ReactGA.pageview(window.location.pathname);
+  })
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+      
+
+      
+      <div style={{backgroundColor:'#002060',color:"white",overflow:'hidden'}} >
+      
+        <Box display={'flex'} alignItems={'center'} flexDirection={'column'} justifyContent={'center'} width={'100vw'}>
+        <section >
+          <NaviBar />
+          <Hero />
+        </section>
+        <section id='about'>
+          <About />          
+        </section>
+        <section id='team'>
+          <Team />
+        </section>
+        <section id='contact'>
+          <ContactUs />
+          <OurFooter />
+        </section>
+      
+
+      </Box>
+      </div>
+
+    
+
+    </ChakraProvider>
+    
   );
 }
 
