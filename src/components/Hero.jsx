@@ -93,7 +93,7 @@ const Hero = () => {
                         ><a href='https://www.loqui-ai-api.com/'>Try Demo</a></Button>
                     </Box>
                 </VStack>
-                <Box width={['90vw','90vw','90vw','55vw']}  display={'flex'} justifyContent={'flex-end'} >
+                <Box width={['90vw','90vw','70vw','55vw']}  display={'flex'} justifyContent={'flex-end'} >
                     <Image ref={el => {logoItem =el}} src={HeroImg}  alt='Hero Image' opacity={0}/>
                 </Box>
             </Stack>

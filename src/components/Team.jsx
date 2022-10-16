@@ -14,21 +14,21 @@ const Team = () => {
             fontWeight={'bold'} p={[5,5,10,20]}>Team</Text>
         <HStack display={'flex'} overflowY={'auto'}>
             <VStack pl={[5,5,0,0]} pr={[5,5,0,0]}>
-                <Box width={['200px','200px','600px']} display={'flex'} justifyContent={'center'}><Image src={Image3}  alt='made with Dalle-2, "the creation" robot human' /></Box>
+                <Box width={['200px','200px','600px']} display={'flex'} justifyContent={'center'}><Image src={Image3}  alt='made with Dalle-2, the creation robot human' height={['200px','200px','400px']}/></Box>
                 <Text fontSize={['16pt','16pt','24pt','28pt']}
                         fontFamily={'arial'}  p={[0,0,3,5]} >Co-Founder</Text>
                 <Text fontSize={['10pt','10pt','15.5pt','20pt']}
                         fontFamily={'arial'} p={[0,0,8,10]} >Elo is a Mechanical/Petroleum Engineer. Elo loves building software and hardware systems to overcome the daily challenges he encounters. Elo is a Mechanical/Petroleum Engineer. Elo loves building software and hardware systems to overcome the daily challenges he encounters. </Text>
             </VStack>
             <VStack>
-                <Box width={['200px','200px','600px']} display={'flex'} justifyContent={'center'}><Image src={Image2}  alt='made with Dalle-2, "the creation" robot human' /></Box>
+                <Box width={['200px','200px','600px']} display={'flex'} justifyContent={'center'}><Image src={Image2}  alt='made with Dalle-2, the creation robot human' height={['200px','200px','400px']}/></Box>
                 <Text fontSize={['16pt','16pt','24pt','28pt']}
                         fontFamily={'arial'} p={[0,0,3,5]} >Co-Founder</Text>
                 <Text fontSize={['10pt','10pt','15.5pt','20pt']}
                         fontFamily={'arial'} p={[0,0,8,10]}>Elo is a Mechanical/Petroleum Engineer. Elo loves building software and hardware systems to overcome the daily challenges he encounters. Elo is a Mechanical/Petroleum Engineer. Elo loves building software and hardware systems to overcome the daily challenges he encounters. </Text>
             </VStack>
             <VStack>
-                <Box width={['200px','200px','600px']} display={'flex'} justifyContent={'center'}><Image src={Image1}  alt='made with Dalle-2, "the creation" robot human' /></Box>
+                <Box width={['200px','200px','600px']} display={'flex'} justifyContent={'center'}><Image src={Image1}  alt='made with Dalle-2, the creation robot human' height={['200px','200px','400px']}/></Box>
                 <Text fontSize={['16pt','16pt','24pt','28pt']}
                         fontFamily={'arial'}  p={[0,0,3,5]} >Masot</Text>
                 <Text fontSize={['10pt','10pt','15.5pt','20pt']}
